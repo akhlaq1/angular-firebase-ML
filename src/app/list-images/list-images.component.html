@@ -1,0 +1,46 @@
+<!-- 
+<table>
+  <tr *ngFor="let student of Student">
+    <td>
+      <img src="{{student.image_url}}" alt="">
+    </td>
+  </tr>  
+</table> -->
+
+
+<!-- <div class="row">
+  <mdb-image-modal [modalImages]="Student" type="no-margin"></mdb-image-modal>
+</div> -->
+
+  
+
+<!-- <div class="row">
+  <mdb-image-modal [modalImages]="student" type="no-margin"></mdb-image-modal>
+</div> -->
+
+<div class="container">
+	<div class="row">
+		<div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" *ngFor="let student of Student">
+                  <!-- <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                    data-image="{{student.image_url}}"
+                    data-target="#image-gallery"> -->
+                    <img class="img-thumbnail"
+                         src="{{student.image_url}}"
+                         height="600px"
+                         width="600px">
+                <!-- </a> -->
+            </div>
+    </div>
+  </div>
+</div>
+<div class="spinner_container">
+  <mat-progress-spinner
+  *ngIf = "spinner"
+  class="example-margin"
+  [color]="color"
+  [mode]="mode"
+  [diameter]=300
+  >
+  </mat-progress-spinner>
+</div>

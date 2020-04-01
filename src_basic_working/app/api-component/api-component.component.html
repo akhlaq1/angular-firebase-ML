@@ -1,0 +1,10 @@
+<h1>File Upload</h1>
+
+  <input type="file"  (change)="onFileSelected($event)" class="form-control" required>
+  <div class="form-group text-right">
+      <button type="submit" class="btn btn-success" (click)="uploadFileFunc()">UPload to server</button>
+    </div>
+
+<div>
+  <img src="{{outImgUrl}}" alt="">
+</div>
